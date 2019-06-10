@@ -7,7 +7,7 @@ This project contains the source code and project files for server and client im
 
 The source code is written in C# 6.0 (.NET Framework 4.6.1). The project files are for Visual Studio 2017. The solution is located in the base folder. The solution is broken into 3 projects, *ChatClientCmdline*, *ChatServer*, and *ChatCommon*.
 
-**Source code** is located in the folders [*ChatClientCmdline*](https://bitbucket.org/akfreed/anotherircclone/src/default/ChatClientCmdline/), [*ChatServer*](https://bitbucket.org/akfreed/anotherircclone/src/default/ChatServer/), and [*ChatCommon*](https://bitbucket.org/akfreed/anotherircclone/src/default/ChatCommon/). (With the bulk of it being in *ChatCommon*.)
+**Source code** is located in the folders [*ChatClientCmdline*](https://github.com/akfreed/AnotherIrcClone/tree/master/ChatClientCmdline), [*ChatServer*](https://github.com/akfreed/AnotherIrcClone/tree/master/ChatServer), and [*ChatCommon*](https://github.com/akfreed/AnotherIrcClone/tree/master/ChatCommon). (With the bulk of it being in *ChatCommon*.)
 
 After compiling, executables will be located in *ChatClientCmdline/bin/* and *ChatServer/bin/* under the *debug* or *release* folder (depending on which one you build).
 
@@ -21,7 +21,7 @@ Theoretically this should be highly scalable. The language automatically works w
 
 # Class Descriptions
 
-**Refer to [*RFC.md*](https://bitbucket.org/akfreed/anotherircclone/src/default/RFC.md) for an explanation of Chat Protocol.**
+**Refer to [*RFC.md*](https://github.com/akfreed/AnotherIrcClone/blob/master/RFC.md) for an explanation of Chat Protocol.**
 
 Many of the classes represent different portions of the network stack. This goal helped when designing the application. In the end, the convenience/shorthand classes can make it hard to figure out what stream is actually being written to / read from. 
 
