@@ -11,6 +11,8 @@ The source code is written in C# 6.0 (.NET Framework 4.6.1). The project files a
 
 After compiling, executables will be located in *ChatClientCmdline/bin/* and *ChatServer/bin/* under the *debug* or *release* folder (depending on which one you build).
 
+You need a certificate to start an SSL connection as the server. A development certificate is included in the [*Certificate*](https://github.com/akfreed/AnotherIrcClone/tree/master/Certificate) directory. This certificate should be placed with the server executable.
+
 # Await / Async
 
 The reason I wrote this in C# was because I wanted to try out this `await` / `async` pattern, which is a feature of the language (not the library). Normal input functions block until data is available. This can be handled by thread-per-client (which is not scalable), polling (which wastes CPU cycles), `pselect`, or (you guessed it!) `async` functions.
