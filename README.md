@@ -58,7 +58,27 @@ At the lowest level, the client and server communicate using the `SslStream` cla
 * `FtFileManager` is a static class that manages files and file transfers for both server and client.
 * `FtClient` is a convenience class that ties an serializers and deserializers together with its `SslStream`. This is necessary for File Transfer because string objects are serialized for communication, but the upper layers also need access to the byte stream for transferring files.
 
+# Client Commands
 
+```
+command:     alt:    arguments:                explanation:
+
+/create              roomname                  - create room
+/delete              roomname                  - delete room
+/rooms       /r                                - list rooms
+/members     /m      roomname                  - list room members
+/subscribe   /sub    roomname                  - begin receiving room messages
+/unsubscribe /unsub  roomname                  - stop receiving room messages
+/select      /s      roomname                  - /sub, /show, and /cast room
+/join        /j      roomname                  - alias for select   
+/show                roomname                  - show messages from room
+/hide                roomname                  - don't show messages from rooms
+/cast        /c      roomname [roomname2...]   - write to selected rooms
+/private     /p      username message          - private message
+/upload              filepath                  - upload a file
+/download            filename                  - download a file
+/exit        /quit                             - log off
+```
 
 -----
 Copyright © 2019 Alexander Freed
